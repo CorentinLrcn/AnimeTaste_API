@@ -23,7 +23,7 @@ app.use('/mangas', mangaRoutes())
 app.use('/recipes', recipeRoutes())
 app.use('/ingredients', ingredientRoutes())
 
-const port = 8080
+const port = process.env.PORT || 8080
 
 app.listen(port, () => {
     console.log('You are on port : ' + port)
